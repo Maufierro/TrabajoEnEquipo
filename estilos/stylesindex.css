@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+}
+
+.formulario {
+  border: 5px solid rgb(77, 6, 6);
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  margin: 0 5em;
+  padding: 1em;
+  margin: 1em;
+
+}
+form div {
+  width: 100%;
+  padding-top: 1.5em;
+}
+
+form input[type=text]{
+  width: 25em;
+  height: 2em;
+  margin-left: auto;
+  float:right;
+}
+
+form textarea{
+  width: 100%;
+  height: 8em;
+  float:right;
+  resize: none;
+}
+
+form select{
+  padding: 10px;
+  width: 30em;
+  height: 3em;
+  float: right;
+}
+
+form input[type=submit]{
+  margin-top: 6em;
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1em;
+
+}
+
+/* .formulario label {
+  background-color: #3b0a0a;
+  padding: 0,1em;
+} */
+
+/* HEADER TUKI */
+
+header {
+  display: flex;
+  border: 10px solid #761414;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url(/imagenes/banerakatsuki.jpg);
+  background-size: cover;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li p {
+  background-color: #200505;
+  border: 2px solid darkred;
+  padding: 15px;
+  color: #f9efed;
+  border-radius: 20px;
+  font-weight: 900;
+  transition: color 0.4s ease;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active {
+  text-decoration: none;
+}
+
+nav ul li p:hover {
+  color: #3b0a0a;
+  background-color: #e78e92;
+  transition: color 0.9s ease;
+}
+
+header img {
+  margin-left: 10px;
+  border-radius: 40px;
+  border: 5px solid #2a0404;
+}
+
+/* HEADER TUKI */
+
+#products {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 0px}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:  #1a0303;
+  max-width: 100%;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.product {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  background-color: #761414;
+  border: 5px solid rgb(20, 20, 20);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.fotoproducto {
+  border: solid 5px black;
+  background-color: yellow;
+}
+
+.fotoproducto > img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.product h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: white;
+  }
+
+.product p {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.product .btn {
+  display: flex;
+  padding: 8px ;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border: solid black 2px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product .btn:hover {
+  background-color: #fff;
+  color: #ff0000;
+}
+
+/* FOOTER */
+
+footer {
+  color: white;
+  background-color:#761414;
+  border: solid 5px #ff0000;
+  border-radius: 10px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+
+color: black;
+
+}
