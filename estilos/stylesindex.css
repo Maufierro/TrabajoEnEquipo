@@ -64,7 +64,7 @@ form input[type=submit]{
 header {
   display: flex;
   border: 10px solid #761414;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url(../imagenes/banerakatsuki.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url(/imagenes/banerakatsuki.jpg);
   background-size: cover;
   padding: 10px;
   align-items: center;
