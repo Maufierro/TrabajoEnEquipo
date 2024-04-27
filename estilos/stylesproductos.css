@@ -99,7 +99,7 @@ body {
   /* Estilos del encabezado */
   
   
-  header {
+  /* header {
     background-color: #2b0202;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -135,10 +135,10 @@ body {
   }
   
   nav a:hover {
-    color: #ff0000; /* Cambiar color en hover */
-  }
+    color: #ff0000; /* Cambiar color en hover 
+  } 
   
-  
+
   /* Estilos de la sección "Hero" */
   
   
