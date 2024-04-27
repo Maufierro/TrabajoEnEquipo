@@ -15,6 +15,85 @@ body {
     padding: 0 20px;
   }
   
+  /*--------------------------------------------------------------*/
+/* Nav responsive con media queries */
+.menuIcon {
+  display: none;
+  height: 50px;
+  width: 40px;
+  color: white;
+  fill: white;
+  
+}
+
+.menuIcon:hover {
+  cursor: pointer;
+  fill: #e78e92;
+}
+
+#btn-menu {
+  display: none;
+}
+#btn-menu-close {
+  display: block;
+}
+@media screen and (max-width: 760px) {
+  header {
+    justify-content: space-between;
+  }
+  #closeButton {
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 10px;
+    background-color:#1a0303;
+    color: white;
+  }
+
+  #closeButton:hover {
+    cursor: pointer;
+    background-color:#2a0404;
+    padding: 12px;    
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    left: -40%;
+    transition: left 0.5s;
+    background-color: #761414b2;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+  nav ul li  {
+    width: 100%;
+    text-align: center;
+  }
+  .menuIcon {
+    display: block;
+  }
+  #btn-menu:checked ~ nav {
+    left: 0;    
+  }
+
+
+  #btn-menu-close:checked ~ nav {
+    left: -40%;
+  }
+  }
+/*--------------------------------------------------------------*/
+
   
   
   /* Estilos del encabezado */
