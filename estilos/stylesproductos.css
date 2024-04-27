@@ -378,30 +378,3 @@ nav a:hover {
   background-color: #ffffff;
   color: #ff0000;
 }
-
-
-
-
-/* Estilos del pie de página */
-footer {
-  color: white;
-  background-color: #ff0000;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
