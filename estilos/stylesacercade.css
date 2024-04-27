@@ -1,0 +1,187 @@
+/* Estilos generales */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: red;
+    }
+  
+  .container {
+    flex: 1;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  
+  
+  /* Estilos del encabezado */
+  
+  
+  header {
+    background-color: #2b0202;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff0000; /* Cambiar color en hover */
+  }
+  
+  
+/* Estilo del contenido del carousel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding: 10px;
+  color: #fff; /* Color del texto */
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+}
+
+/* Estilo del contenedor del carousel */
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #888;
+}
+
+/*  
+  
+  /* Estilos de la sección "Acerca de" */
+  #about {
+    flex: 1;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #e4afaf;
+    padding: 10px;
+    background-color: #2b0202;
+  }
+  
+  #about p {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  
+  
+  /* Estilos del pie de página */
+  footer {
+    margin-top: auto;   
+    color: white;
+    background-color: #ff0000;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
