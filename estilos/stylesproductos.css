@@ -1,98 +1,63 @@
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #000;
+}
+
+
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: black;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.formulario {
+  border: 5px solid rgb(77, 6, 6);
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  margin: 0 5em;
+  padding: 1em;
+  margin: 1em;
+
+}
+form div {
+  width: 100%;
+  padding-top: 1.5em;
 }
 
-/* Nav responsive con media queries */
-.menuIcon {
-  display: none;
-  height: 50px;
-  width: 40px;
-  color: white;
-  fill: white;
+form input[type=text]{
+  width: 25em;
+  height: 2em;
+  margin-left: auto;
+  float:right;
 }
 
-.menuIcon:hover {
-  cursor: pointer;
-  fill: #e78e92;
+form textarea{
+  width: 100%;
+  height: 8em;
+  float:right;
+  resize: none;
 }
 
-#btn-menu {
-  display: none;
+form select{
+  padding: 10px;
+  width: 30em;
+  height: 3em;
+  float: right;
 }
 
-#btn-menu-close {
-  display: block;
+form input[type=submit]{
+  margin-top: 6em;
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1em;
+
 }
 
-@media screen and (max-width: 760px) {
-  header {
-      justify-content: space-between;
-  }
-  #closeButton {
-      padding: 10px;
-      border-radius: 10px;
-      position: absolute;
-      top: 0;
-      right: 10px;
-      margin: 10px;
-      background-color: #1a0303;
-      color: white;
-  }
-
-  #closeButton:hover {
-      cursor: pointer;
-      background-color: #2a0404;
-      padding: 12px;
-  }
-
-  nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 40%;
-      position: fixed;
-      height: 100vh;
-      bottom: 0;
-      left: -40%;
-      transition: left 0.5s;
-      background-color: #761414b2;
-  }
-  nav ul {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 80px;
-  }
-  nav ul li {
-      width: 100%;
-      text-align: center;
-  }
-  .menuIcon {
-      display: block;
-  }
-  #btn-menu:checked~nav {
-      left: 0;
-  }
-
-  #btn-menu-close:checked~nav {
-      left: -40%;
-  }
-}
-
-/*--------------------------------------------------------------*/
-
-/* Estilos del encabezado */
+/* .formulario label {
+  background-color: #3b0a0a;
+  padding: 0,1em;
+} */
 
 /* HEADER TUKI */
 
@@ -145,83 +110,155 @@ nav ul li p:hover {
   background-color: #e78e92;
   transition: color 0.9s ease;
 }
-
-/* Estilos de la sección "Hero" */
-
-.hero {
-  background-image: url("/imagenes/banerakatsuki.jpg");
-  background-size: cover;
-  padding: 100px 0;
-  text-align: center;
+/*--------------------------------------------------------------*/
+/* Nav responsive con media queries */
+.menuIcon {
+  display: none;
+  height: 50px;
+  width: 40px;
+  color: white;
+  fill: white;
+  
 }
 
-.hero h1 {
-  background-color: rgba(0, 0, 0, 0.9);
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #fff;
+.menuIcon:hover {
+  cursor: pointer;
+  fill: #e78e92;
 }
 
-.hero p {
-  background-color: rgba(0, 0, 0, 0.9);
-  font-size: 18px;
-  color: #fff;
+#btn-menu {
+  display: none;
+}
+#btn-menu-close {
+  display: block;
+}
+@media screen and (max-width: 760px) {
+  header {
+    justify-content: space-between;
+  }
+  #closeButton {
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 10px;
+    background-color:#1a0303;
+    color: white;
+  }
+
+  #closeButton:hover {
+    cursor: pointer;
+    background-color:#2a0404;
+    padding: 12px;    
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    left: -40%;
+    transition: left 0.5s;
+    background-color: #761414b2;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+  nav ul li  {
+    width: 100%;
+    text-align: center;
+  }
+  .menuIcon {
+    display: block;
+  }
+  #btn-menu:checked ~ nav {
+    left: 0;    
+  }
+
+
+  #btn-menu-close:checked ~ nav {
+    left: -40%;
+  }
+  }
+/*--------------------------------------------------------------*/
+
+
+
+header img {
+  margin-left: 10px;
+  border-radius: 40px;
+  border: 5px solid #2a0404;
 }
 
-.hero .cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #ff0000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+/* HEADER TUKI */
 
-.hero .cta-button:hover {
-  background-color: #ffffff;
-  color: #ff0000;
-}
-
-/* Estilos de la sección "Productos" */
 #products {
-  background-color: black;
-  padding: 50px 0;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 0px}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:  #1a0303;
+  max-width: 100%;
+  padding: 20px;
+  justify-content: space-around;
 }
 
 .product {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 500px;
   background-color: #761414;
-  padding: 20px;
-  margin-bottom: 30px;
+  border: 5px solid rgb(20, 20, 20);
+  padding: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.product img {
-  max-width: 50%;
-  height: 50%;
+.fotoproducto {
+  border: solid 5px black;
+  background-color: yellow;
+}
+
+.fotoproducto > img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .product h3 {
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: white;
-  background-color: #761414;
-}
+  }
 
 .product p {
+  width: 100%;
   font-size: 16px;
   margin-bottom: 20px;
   color: #ffffff;
 }
 
 .product .btn {
-  display: inline-block;
-  padding: 8px 16px;
+  display: flex;
+  padding: 8px ;
   background-color: #ff0000;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border: solid black 2px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -230,84 +267,13 @@ nav ul li p:hover {
   color: #ff0000;
 }
 
-/* Estilos de la sección "Acerca de" */
-#about {
-  background-color: black;
-  color: white;
-  padding: 50px 0;
-}
+/* FOOTER */
 
-#about h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #ff0505;
-}
-
-#about p {
-  text-align: center;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-/* Estilos de la sección "Contacto" */
-#contact {
-  background-color: #2a0404;
-  padding: 50px 0;
-}
-
-#contact h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-#contact input,
-#contact textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.contact-buttons a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 0 10px;
-  color: #fff;
-  background-color: #ff0000;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-buttons a:hover {
-  background-color: #cc0000;
-}
-
-.contact-buttons a:first-child {
-  background-color: #25D366; /* Color de WhatsApp */
-}
-
-.contact-buttons a:nth-child(2) {
-  background-color: #3b5998; /* Color de Facebook */
-}
-
-.contact-buttons a:last-child {
-  background-color: #c13584; /* Color de Instagram */
-}
-
-/* Estilos del pie de página */
 footer {
   color: white;
-  background-color: #ff0000;
+  background-color:#761414;
+  border: solid 5px #ff0000;
+  border-radius: 10px;
   padding: 20px 0;
   text-align: center;
 }
@@ -326,4 +292,10 @@ footer ul li {
 footer ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+footer ul li a:hover {
+
+color: black;
+
 }
