@@ -19,7 +19,66 @@ body {
     padding: 0 20px;
   }
   
-  
+  /* HEADER TUKI */
+
+header {
+  display: flex;
+  border: 10px solid #761414;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url(../imagenes/banerakatsuki.jpg);
+  background-size: cover;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li p {
+  background-color: #200505;
+  border: 2px solid darkred;
+  padding: 15px;
+  color: #f9efed;
+  border-radius: 20px;
+  font-weight: 900;
+  transition: color 0.4s ease;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active {
+  text-decoration: none;
+}
+
+nav ul li p:hover {
+  color: #3b0a0a;
+  background-color: #e78e92;
+  transition: color 0.9s ease;
+}
+/*--------------------------------------------------------------*/
+/* Nav responsive con media queries */
+.menuIcon {
+  display: none;
+  height: 50px;
+  width: 40px;
+  color: white;
+  fill: white;
+}
   
   /* Estilos del encabezado */
   header {
@@ -42,7 +101,36 @@ body {
   nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    left: -40%;
+    transition: left 0.5s;
+    background-color: #761414b2;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 80px;
+  }
+  nav ul li  {
+    width: 100%;
+    text-align: center;
+  }
+  .menuIcon {
+    display: block;
+  }
+  #btn-menu:checked ~ nav {
+    left: 0;    
+  }
+
+
+  #btn-menu-close:checked ~ nav {
+    left: -40%;
   }
   
   nav ul li {
