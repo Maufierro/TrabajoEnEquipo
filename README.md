@@ -20,3 +20,15 @@ To do list:
 -Corregir CSS de contacto entero.
 
 -Subir foto de cada uno, con una descripción para la sección ACERCA DE.
+
+-Incorporar nuevamente iframe.
+
+-Incorporar nuevamente las animaciones.
+
+-Incorporar nuevamente las Google fonts.
+
+-(Opcional) Incorporar algunos icónos / animaciones extras.
+
+-Redondear estilos así queda todo alineado.
+
+28/04/2024. Leandro.
