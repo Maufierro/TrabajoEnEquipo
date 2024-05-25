@@ -51,12 +51,10 @@ form button:hover{
     box-shadow: 0 0 2px #fffa;
 }
 
-.texto{
-    margin-top: 15px;
-}
-form a{
+form .texto{
     color: #ccc;
     text-decoration: none;
+    padding-top: 15px;
 }
 
 form a:hover{
