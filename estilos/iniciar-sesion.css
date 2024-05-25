@@ -35,10 +35,10 @@ form input::placeholder{
     color: #eeeeee;
 }
 form .boton{
-    margin: 15px;
+    margin: 0 15px 15px 15px;
 }
 form button{
-    margin-top: 30px;
+    margin-top: 10px;
     width: 100%;
     padding: 5px;
     border: none;
@@ -49,6 +49,16 @@ form button{
 }
 form button:hover{
     box-shadow: 0 0 2px #fffa;
+}
+
+form .texto{
+    color: #ccc;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+form a:hover{
+    color: #eeeeee;
 }
 
 #mensaje{
