@@ -9,7 +9,8 @@ function verificarCredenciales(){
     if(user === "ADMIN" && password === "ADMIN"){
         obtenerDatos();
     } else {
-        mostrarMensajeError("El usuario no se encuentra en la BD");
+        //mostrarMensajeError("El usuario no se encuentra en la BD");
+        alert("El usuario es incorrecto, porfavor ingrese ADIM en cambos campos para poder iniciar sesion.")
     }
 }
 
