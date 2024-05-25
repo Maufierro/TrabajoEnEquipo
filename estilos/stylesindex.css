@@ -58,12 +58,11 @@ form input[type=submit]{
 ACA IRIA SI HACE FALTA EL STYLO DEL NAVBAR DE BOOTSTRAP
 */
 
-
 /* SECTION PRODUCTS*/
 
 #products {
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   padding: 0px}
 
 .container {
