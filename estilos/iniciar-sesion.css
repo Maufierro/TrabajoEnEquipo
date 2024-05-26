@@ -2,6 +2,59 @@ body{
     background-color: #222;
 }
 
+/**
+ACA IRIA SI HACE FALTA EL STYLO DEL NAVBAR DE BOOTSTRAP
+*/
+.navbar{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url(../imagenes/banerakatsuki.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:#761414 5px solid;
+  }
+  
+  .navbar-brand{
+    padding-left: 20px;
+  }
+  
+  .navbar-toggler{
+    filter: invert();
+  }
+  
+  .nav-item{
+    background-color: #200505;
+    border: 2px solid darkred;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 0px 15px;
+    padding: 5px;
+    transition: 0.4s;
+  }
+  
+  .nav-item:hover{
+    background-color: #e78e92;
+    transition: color 0.9s ease;
+  }
+  
+  .nav-link{
+    color: #ededed!important;
+  }
+  
+  .navbar img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    border: 1px solid #761414;
+    transition: 0.5s;
+    object-fit: cover;
+  }
+  
+  .navbar img:hover{
+    transform: scale(1.1);
+  }
+  /*ACA TERMINA EL HEADER*/
+  
+
 form {
     box-sizing: border-box;
     width: 250px;
@@ -69,3 +122,33 @@ form a:hover{
     font-size: 20px;
     font-family: sans-serif;
 }
+
+footer {
+    color: white;
+    background-color:#761414;
+    border: solid 5px #ff0000;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+  
+  color: black;
+  
+  }

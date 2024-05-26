@@ -59,143 +59,57 @@ form input[type=submit]{
   padding: 0,1em;
 } */
 
-/* HEADER TUKI */
-
-header {
-  display: flex;
-  border: 10px solid #761414;
+/**
+ACA IRIA SI HACE FALTA EL STYLO DEL NAVBAR DE BOOTSTRAP
+*/
+.navbar{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url(../imagenes/banerakatsuki.jpg);
   background-size: cover;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:#761414 5px solid;
 }
 
-nav {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.navbar-brand{
+  padding-left: 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.navbar-toggler{
+  filter: invert();
 }
 
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li p {
+.nav-item{
   background-color: #200505;
   border: 2px solid darkred;
-  padding: 15px;
-  color: #f9efed;
+  font-weight: 500;
   border-radius: 20px;
-  font-weight: 900;
-  transition: color 0.4s ease;
+  margin: 0px 15px;
+  padding: 5px;
+  transition: 0.4s;
 }
 
-nav ul li a:link,
-nav ul li a:visited,
-nav ul li a:hover,
-nav ul li a:active {
-  text-decoration: none;
-}
-
-nav ul li p:hover {
-  color: #3b0a0a;
+.nav-item:hover{
   background-color: #e78e92;
   transition: color 0.9s ease;
 }
-/*--------------------------------------------------------------*/
-/* Nav responsive con media queries */
-.menuIcon {
-  display: none;
-  height: 50px;
-  width: 40px;
-  color: white;
-  fill: white;
-  
+
+.nav-link{
+  color: #ededed!important;
 }
 
-.menuIcon:hover {
-  cursor: pointer;
-  fill: #e78e92;
+.navbar img{
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  border: 1px solid #761414;
+  transition: 0.5s;
+  object-fit: cover;
 }
 
-#btn-menu {
-  display: none;
+.navbar img:hover{
+  transform: scale(1.1);
 }
-#btn-menu-close {
-  display: block;
-}
-@media screen and (max-width: 760px) {
-  header {
-    justify-content: space-between;
-  }
-  #closeButton {
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    margin: 10px;
-    background-color:#1a0303;
-    color: white;
-  }
-
-  #closeButton:hover {
-    cursor: pointer;
-    background-color:#2a0404;
-    padding: 12px;    
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    position: fixed;
-    height: 100vh;
-    bottom: 0;
-    left: -40%;
-    transition: left 0.5s;
-    background-color: #761414b2;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-  }
-  nav ul li  {
-    width: 100%;
-    text-align: center;
-  }
-  .menuIcon {
-    display: block;
-  }
-  #btn-menu:checked ~ nav {
-    left: 0;    
-  }
-
-
-  #btn-menu-close:checked ~ nav {
-    left: -40%;
-  }
-  }
-/*--------------------------------------------------------------*/
-
-
-
-header img {
-  margin-left: 10px;
-  border-radius: 40px;
-  border: 5px solid #2a0404;
-}
+/*ACA TERMINA EL HEADER*/
 
 /* Seccion productos */
 
@@ -247,12 +161,10 @@ header img {
 }
 
 /* FOOTER */
-
 footer {
   color: white;
   background-color:#761414;
   border: solid 5px #ff0000;
-  border-radius: 10px;
   padding: 20px 0;
   text-align: center;
 }
@@ -278,7 +190,6 @@ footer ul li a:hover {
 color: black;
 
 }
-
 /* Estilos generales */
 
 
@@ -294,87 +205,4 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-
-
-/* Estilos del encabezado */
-
-
-header {
-  background-color: #2b0202;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ff0000; /* Cambiar color en hover */
-}
-
-
-/* Estilos de la sección "Hero" */
-
-
-.hero {
-  background-image: url("/imagenes/banerakatsuki.jpg"); 
-  background-size: cover;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.hero h1 {
-  background-color: rgba(0, 0, 0, 0.9);
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.hero p {
-  background-color: rgba(0, 0, 0, 0.9);
-  font-size: 18px;
-  color: #fff;
-}
-
-.hero .cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #ff0000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.hero .cta-button:hover {
-  background-color: #ffffff;
-  color: #ff0000;
 }
