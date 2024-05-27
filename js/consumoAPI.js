@@ -50,3 +50,6 @@ function mostrarMensajeError(mensaje) {
     document.getElementById('mensaje').textContent = mensaje;
 }
 
+obtenerDatos();
+mostrarMensaje();
+mostrarMensajeError();
