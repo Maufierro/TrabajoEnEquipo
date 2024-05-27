@@ -95,6 +95,12 @@ ACA IRIA SI HACE FALTA EL STYLO DEL NAVBAR DE BOOTSTRAP
 form {
   width: 100%;
 }
+.flex-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 button[type="submit"] {
   font-size: 1.2em; 
