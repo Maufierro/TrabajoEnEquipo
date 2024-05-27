@@ -9,7 +9,8 @@ function verificarCredenciales() {
     if (user === "ADMIN" && password === "ADMIN") {
         console.log("Usuario iniciado correctamente");
         localStorage.setItem('username', user); // Guardar el nombre del usuario en Local Storage
-        window.location.href = '/index.html'; // Redirigir a la página principal
+        //window.location.href = '/index.html'; // Redirigir a la página principal
+        window.location.href = 'https://psaycher.github.io/TrabajoEnEquipo/'; // Redirigir a la página principal
     } else {
         alert("El usuario es incorrecto, por favor ingrese ADMIN en ambos campos para poder iniciar sesión.");
     }
