@@ -11,6 +11,7 @@ const renderNavBar = () => {
     }
     const navBar = document.getElementById("headerContainer");
     const renderLogoPath = isInIndex?"./imagenes/Logo Tuki.jpg":"../imagenes/Logo Tuki.jpg";
+    const existAuthUser = localStorage.getItem("username");
     navBar.innerHTML = `
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -33,15 +34,19 @@ const renderNavBar = () => {
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="${generateHref(isInIndex, "consumoAPI.html")}">Recomendados</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="${generateHref(isInIndex, "Registro.html" )}">Registrarse</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="${generateHref(isInIndex, "iniciar-sesion.html")}">Iniciar Sesion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="${generateHref(isInIndex, "index.html")}" onclick="cerrarSesion()">Cerrar Sesion</a>
-              </li>
+
+            ${
+              existAuthUser? 
+              `<li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="./index.html" onclick="cerrarSesion()">Cerrar Sesion</a>
+              </li>` : 
+              `<li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="${generateHref(isInIndex, "Registro.html" )}">Registrarse</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="${generateHref(isInIndex, "iniciar-sesion.html")}">Iniciar Sesion</a>
+               </li>`
+            } 
             </ul>
           </div>
         </div>
