@@ -1,11 +1,17 @@
 const renderNavBar = () => {
     const currentPath = window.location.pathname;
     const isInIndex = currentPath.includes("index.html") || currentPath === "/";
+    const isInDeploy = currentPath.includes("TrabajoEnEquipo");
+
     const generateHref = (isInIndex, path) => {
         let href = `./${path}`;
 
         if (isInIndex) {
             href = `./html/${path}`;
+        }
+
+        if (isInDeploy) {
+            href = `./TrabajoEnEquipo/${path}`;
         }
         return href
     }
