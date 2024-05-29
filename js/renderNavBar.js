@@ -1,18 +1,18 @@
 const renderNavBar = () => {
     const currentPath = window.location.pathname;
-    const isInIndex = currentPath.includes("index.html") || currentPath === "/";
+    const isInIndex = currentPath.includes("index.html") || currentPath === "/"
     const isInDeploy = currentPath.includes("TrabajoEnEquipo");
-
+  console.log(isInDeploy, isInIndex,currentPath);
     const generateHref = (isInIndex, path) => {
         let href = `./${path}`;
 
-        if (isInIndex) {
+        if (isInIndex || isInDeploy) {
             href = `./html/${path}`;
         }
 
-        if (isInDeploy) {
-            href = `./TrabajoEnEquipo/html/${path}`;
-        }
+        // if (isInDeploy) {
+        //     href = `TrabajoEnEquipo/html/${path}`;
+        // }
         return href
     }
     const navBar = document.getElementById("headerContainer");
