@@ -12,6 +12,7 @@ const renderNavBar = () => {
 
         if (isInDeploy) {
             href = `./${path}`;
+            console.log(href);
         }
         return href
     }
