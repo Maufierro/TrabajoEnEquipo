@@ -1,27 +1,26 @@
 const renderNavBar = () => {
     const currentPath = window.location.pathname;
-    const isInIndex = currentPath.includes("index.html") || currentPath === "/" || currentPath === "/TrabajoEnEquipo/";
-    // const isInDeploy = currentPath.includes("TrabajoEnEquipo");
-  console.log( isInIndex,currentPath);
-    const generateHref = (isInIndex, path) => {
+    const isInDeploy = currentPath === "/TrabajoEnEquipo/"
+    const isInIndex = currentPath.includes("index.html") || currentPath === "/" || isInDeploy ;
+    const generateHref = (isInIndex, path,logoTab) => {
         let href = `./${path}`;
 
         if (isInIndex) {
             href = `./html/${path}`;
         }
-
-        // if (isInDeploy) {
-        //     href = `TrabajoEnEquipo/html/${path}`;
-        // }
+        if(logoTab){
+            href = `./${path}`;
+        }
         return href
     }
     const navBar = document.getElementById("headerContainer");
     const renderLogoPath = isInIndex?"./imagenes/Logo Tuki.jpg":"../imagenes/Logo Tuki.jpg";
+    const renderLogoHref =isInIndex && isInDeploy?"./index.html":"../index.html";
     const existAuthUser = localStorage.getItem("username");
     navBar.innerHTML = `
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src= "${renderLogoPath}" alt="#"></a>
+          <a class="navbar-brand" href="${renderLogoHref}"><img src= "${renderLogoPath}" alt="#"></a>
           <span id="user-greeting" style="color: aliceblue; text-decoration: underline; font-weight: 600;"></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
