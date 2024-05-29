@@ -1,12 +1,12 @@
 const renderNavBar = () => {
     const currentPath = window.location.pathname;
-    const isInIndex = currentPath.includes("index.html") || currentPath === "/"
-    const isInDeploy = currentPath.includes("TrabajoEnEquipo");
-  console.log(isInDeploy, isInIndex,currentPath);
+    const isInIndex = currentPath.includes("index.html") || currentPath === "/" || currentPath === "/TrabajoEnEquipo/";
+    // const isInDeploy = currentPath.includes("TrabajoEnEquipo");
+  console.log( isInIndex,currentPath);
     const generateHref = (isInIndex, path) => {
         let href = `./${path}`;
 
-        if (isInIndex || isInDeploy) {
+        if (isInIndex) {
             href = `./html/${path}`;
         }
 
