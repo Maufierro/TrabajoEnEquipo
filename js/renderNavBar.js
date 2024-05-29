@@ -15,8 +15,8 @@ const renderNavBar = () => {
     }
     const navBar = document.getElementById("headerContainer");
     const renderLogoPath = isInIndex?"./imagenes/Logo Tuki.jpg":"../imagenes/Logo Tuki.jpg";
-    const renderLogoHref =isInIndex && isInDeploy?"./index.html":"../index.html";
     const existAuthUser = localStorage.getItem("username");
+    const renderLogoHref = isInIndex ?"index.html":"../index.html";
     navBar.innerHTML = `
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
