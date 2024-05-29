@@ -11,7 +11,7 @@ const renderNavBar = () => {
         }
 
         if (isInDeploy) {
-            href = `./TrabajoEnEquipo/${path}`;
+            href = `./${path}`;
         }
         return href
     }
